@@ -13,6 +13,60 @@
 <meta property="og:image" content="https://paper-rho.wenbo.io/static/fig2-pipeline.png">
 <meta property="og:url" content="https://paper-rho.wenbo.io">
 <meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://paper-rho.wenbo.io/">
+<meta property="og:site_name" content="RHO · Wenbo Pan">
+<meta name="twitter:title" content="Evolving Agents in the Dark: Retrospective Harness Optimization (RHO)">
+<meta name="twitter:description" content="Improving LLM agents from their own unlabeled past trajectories, no ground-truth labels. Findings of EMNLP 2026.">
+<meta name="twitter:image" content="https://paper-rho.wenbo.io/static/fig2-pipeline.png">
+
+<meta name="citation_title" content="Evolving Agents in the Dark: Retrospective Harness Optimization via Self-Preference">
+<meta name="citation_author" content="Pan, Wenbo">
+<meta name="citation_author" content="Liu, Shujie">
+<meta name="citation_author" content="Lin, Chin-Yew">
+<meta name="citation_author" content="Zeng, Jingying">
+<meta name="citation_author" content="Tang, Xianfeng">
+<meta name="citation_author" content="Zhou, Xiangyang">
+<meta name="citation_author" content="Lu, Yan">
+<meta name="citation_author" content="Jia, Xiaohua">
+<meta name="citation_publication_date" content="2026/10">
+<meta name="citation_online_date" content="2026/06/04">
+<meta name="citation_conference_title" content="Findings of the Association for Computational Linguistics: EMNLP 2026">
+<meta name="citation_arxiv_id" content="2606.05922">
+<meta name="citation_firstpage" content="52321">
+<meta name="citation_lastpage" content="52362">
+<meta name="citation_publisher" content="Association for Computational Linguistics">
+<meta name="citation_isbn" content="979-8-89176-462-0">
+<meta name="citation_pdf_url" content="https://aclanthology.org/2026.findings-emnlp.2439.pdf">
+<meta name="citation_abstract_html_url" content="https://arxiv.org/abs/2606.05922">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "@id": "https://paper-rho.wenbo.io/#article",
+  "headline": "Evolving Agents in the Dark: Retrospective Harness Optimization via Self-Preference",
+  "name": "Evolving Agents in the Dark: Retrospective Harness Optimization via Self-Preference",
+  "alternateName": "RHO",
+  "abstract": "AI agents rely on a harness of skills, tools, and workflows to solve complex problems. Continually improving this harness is essential for adapting to new tasks. However, existing optimization methods typically require ground-truth validation sets, yet such labeled data is difficult to acquire in practical deployment settings. To address this problem, we introduce Retrospective Harness Optimization (RHO), a self-supervised method that optimizes the agent harness using only past trajectories. Specifically, RHO selects a diverse coreset of challenging tasks from past trajectories and re-solves them in parallel. The agent analyzes these rollouts using self-validation and self-consistency, then generates candidate harness updates and selects the most effective one by its own pairwise self-preference. We evaluate RHO across three diverse domains, spanning software engineering, technical work, and knowledge work. Notably, a single optimization round improves the pass rate on SWE-Bench Pro from 59% to 78% without any external grading. Furthermore, our analysis demonstrates that RHO effectively targets prior failure modes. As a result, the optimized harness alters the agent's behavior patterns and sustains higher accuracy during long-horizon sessions.",
+  "author": [
+    {"@type": "Person", "name": "Wenbo Pan", "url": "https://www.wenbo.io/", "@id": "https://www.wenbo.io/#person", "affiliation": {"@type": "CollegeOrUniversity", "name": "City University of Hong Kong"}},
+    {"@type": "Person", "name": "Shujie Liu", "affiliation": {"@type": "Organization", "name": "Microsoft Research Asia"}},
+    {"@type": "Person", "name": "Chin-Yew Lin", "affiliation": {"@type": "Organization", "name": "Microsoft Research Asia"}},
+    {"@type": "Person", "name": "Jingying Zeng", "affiliation": {"@type": "Organization", "name": "Microsoft Research Asia"}},
+    {"@type": "Person", "name": "Xianfeng Tang", "affiliation": {"@type": "Organization", "name": "Microsoft Research Asia"}},
+    {"@type": "Person", "name": "Xiangyang Zhou", "affiliation": {"@type": "Organization", "name": "Microsoft Research Asia"}},
+    {"@type": "Person", "name": "Yan Lu", "affiliation": {"@type": "Organization", "name": "Microsoft Research Asia"}},
+    {"@type": "Person", "name": "Xiaohua Jia", "affiliation": {"@type": "CollegeOrUniversity", "name": "City University of Hong Kong"}}
+  ],
+  "datePublished": "2026-06-04",
+  "isPartOf": {"@type": "Book", "name": "Findings of the Association for Computational Linguistics: EMNLP 2026", "isbn": "979-8-89176-462-0"}, "pagination": "52321-52362",
+  "publisher": {"@type": "Organization", "name": "Association for Computational Linguistics"},
+  "url": "https://paper-rho.wenbo.io/",
+  "image": "https://paper-rho.wenbo.io/static/fig2-pipeline.png",
+  "sameAs": ["https://aclanthology.org/2026.findings-emnlp.2439/", "https://arxiv.org/abs/2606.05922", "https://doi.org/10.48550/arXiv.2606.05922", "https://github.com/wbopan/retro-harness"],
+  "keywords": ["LLM agents", "self-evolving agents", "harness optimization", "self-preference", "unlabeled trajectories"]
+}
+</script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -181,7 +235,7 @@
 
 <header>
   <div class="wrap">
-    <div class="eyebrow">arXiv 2026 · Preprint</div>
+    <div class="eyebrow">Findings of EMNLP 2026</div>
     <h1>Evolving Agents in the Dark</h1>
     <p class="subtitle"><span class="sc">Retrospective Harness Optimization</span> via Self-Preference</p>
 
@@ -195,6 +249,10 @@
       <a class="btn" href="https://arxiv.org/abs/2606.05922">
         <svg viewBox="0 0 24 24"><path d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1zm8 1.5V8h4.5L14 3.5zM8 12h8v1.5H8V12zm0 4h8v1.5H8V16z"/></svg>
         Paper
+      </a>
+      <a class="btn ghost" href="https://aclanthology.org/2026.findings-emnlp.2439/">
+        <svg viewBox="0 0 24 24"><path d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1zm8 1.5V8h4.5L14 3.5zM8 12h8v1.5H8V12zm0 4h8v1.5H8V16z"/></svg>
+        ACL Anthology
       </a>
       <a class="btn ghost" href="https://github.com/wbopan/retro-harness">
         <svg viewBox="0 0 24 24"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.4 11.4 0 0 1 6 0C18 4.6 19 4.9 19 4.9c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg>
@@ -349,13 +407,28 @@
       <span style="color:var(--muted);font-size:0.9rem;">If you find RHO useful, please cite:</span>
       <button class="copy-btn" onclick="copyBib()">Copy</button>
     </div>
-<pre id="bib">@article{pan2026rho,
-  title   = {Evolving Agents in the Dark: Retrospective Harness
-             Optimization via Self-Preference},
-  author  = {Pan, Wenbo and Liu, Shujie and Lin, Chin-Yew and Zeng, Jingying
-             and Tang, Xianfeng and Zhou, Xiangyang and Lu, Yan and Jia, Xiaohua},
-  journal = {arXiv preprint arXiv:2606.05922},
-  year    = {2026}
+<pre id="bib">@inproceedings{pan-etal-2026-evolving,
+    title = "Evolving Agents in the Dark: Retrospective Harness Optimization via Self-Preference",
+    author = "Pan, Wenbo  and
+      Liu, Shujie  and
+      Lin, Chin-Yew  and
+      Zeng, Jingying  and
+      Tang, Xianfeng  and
+      Zhou, Xiangyang  and
+      Lu, Yan  and
+      Jia, Xiaohua",
+    editor = "Lee, Hung-Yi  and
+      Dev, Sunipa  and
+      Li, Jessy  and
+      Elliott, Desmond",
+    booktitle = "Findings of the {A}ssociation for {C}omputational {L}inguistics: {EMNLP} 2026",
+    month = oct,
+    year = "2026",
+    address = "Budapest, Hungary",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.findings-emnlp.2439/",
+    pages = "52321--52362",
+    ISBN = "979-8-89176-462-0"
 }</pre>
   </div>
 </section>
